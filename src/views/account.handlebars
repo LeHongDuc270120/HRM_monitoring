@@ -1,0 +1,27 @@
+
+<h1 class="my-4">Accounts</h1>
+<a href="/" class="btn btn-primary">Back to Home</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>account_id</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Role</th>
+            <th>Create Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each accounts}}
+            <tr>
+                <td>{{this.account_id}}</td>
+                <td>{{this.account_username}}</td>
+                <td>{{this.account_email}}</td>
+                <td>{{this.account_phonenumber}}</td>
+                <td>{{this.account_role}}</td>
+                <td>{{this.account_createDate}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
